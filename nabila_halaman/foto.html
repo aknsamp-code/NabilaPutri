@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#100d1d">
+<title>Foto Kenangan — Untuk Nabila</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars" aria-hidden="true"></canvas><div class="noise" aria-hidden="true"></div>
+<div class="site">
+<header class="topbar"><a class="brand" href="index.html">A LITTLE SURPRISE <span>✦</span></a><button class="music" id="musicButton" type="button" aria-label="Putar atau hentikan musik"><span class="music-dot"></span><span data-music-label>Putar musik</span> ♫</button></header>
+<nav class="page-nav" aria-label="Navigasi halaman"><a href="index.html">Beranda</a><a href="foto.html" aria-current="page">Foto</a><a href="pesan.html">Pesan</a></nav>
+<main class="content photo-content">
+<section aria-labelledby="galleryTitle"><div class="gallery-heading"><div class="eyebrow">Little moments, big memories</div><h1 id="galleryTitle">Kenangan<span>untuk Nabila</span></h1><p class="lead">Satu per satu kenangan manis untuk dirayakan hari ini. ♡</p></div>
+<div class="memory-viewer" id="memoryViewer" tabindex="0" aria-label="Galeri foto Nabila. Gunakan tombol panah untuk mengganti foto.">
+<figure class="memory-slide is-active" aria-hidden="false"><img src="../img/IMG1.JPG" alt="Foto kenangan Nabila nomor satu"><figcaption><span class="memory-number">01 <i>/ 04</i></span><h2>Hari ini, semuanya tentang Kamu</h2><p>Semoga hari istimewamu dipenuhi tawa, kejutan manis, dan orang-orang yang sayang sama kamu.</p></figcaption></figure>
+<figure class="memory-slide" aria-hidden="true"><img src="../img/IMG2.JPG" alt="Foto kenangan Nabila nomor dua"><figcaption><span class="memory-number">02 <i>/ 04</i></span><h2>Jadi Nabila Yang ijal Kenal yaa</h2><p>Semoga setiap Langkahnya membawa cerita indah dan alasan baru Buat tersenyum.</p></figcaption></figure>
+<figure class="memory-slide" aria-hidden="true"><img src="../img/IMG3.JPG" alt="Foto kenangan Nabila nomor tiga"><figcaption><span class="memory-number">03 <i>/ 04</i></span><h2>Untuk semua mimpi indahmu</h2><p>Semoga doa-doa baikmu menemukan jalan pulang, satu per satu, di waktu yang tepat.</p></figcaption></figure>
+<figure class="memory-slide" aria-hidden="true"><img src="../img/IMG4.JPG" alt="Foto kenangan Nabila nomor empat"><figcaption><span class="memory-number">04 <i>/ 04</i></span><h2>Kamu pantas bahagia</h2><p>Jangan lupa menikmati setiap proses. Dunia terasa lebih indah karena ada kamu di dalamnya. ♡</p></figcaption></figure>
+<div class="memory-controls"><div class="memory-dots" role="group" aria-label="Pilih foto"><button class="memory-dot" type="button" aria-label="Foto 1" aria-current="true"></button><button class="memory-dot" type="button" aria-label="Foto 2" aria-current="false"></button><button class="memory-dot" type="button" aria-label="Foto 3" aria-current="false"></button><button class="memory-dot" type="button" aria-label="Foto 4" aria-current="false"></button></div><div class="memory-arrows"><button class="memory-arrow" id="previousMemory" type="button" aria-label="Foto sebelumnya">‹</button><button class="memory-arrow" id="nextMemory" type="button" aria-label="Foto berikutnya">›</button></div></div>
+</div></section>
+<div class="button-row" style="justify-content:space-between"><a class="button" href="index.html"><span aria-hidden="true">←</span> Sebelumnya</a><a class="button primary" href="pesan.html">Buka pesan <span aria-hidden="true">→</span></a></div>
+<div class="page-indicator">HALAMAN 2 DARI 3</div>
+</main>
+<footer class="footer">MADE WITH ♥ FOR NABILA</footer>
+</div>
+<div class="music-hint" id="musicHint" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
